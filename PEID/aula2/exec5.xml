@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root-element
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="exec5.1.xsd">
+    
+
+    <aluno>
+        <primeironome>Abel</primeironome>
+        <ultimonome>Xavier</ultimonome>
+    </aluno>
+
+    <aluno2 nraluno="123">Joao
+    </aluno2>
+
+    <carta>Ola Sr. <nome>Joao</nome> o seu pedido <pedido>123</pedido> 
+        foi expedido</carta>
+
+</root-element>

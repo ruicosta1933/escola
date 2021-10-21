@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Elementos Vazios --> 
+
+<produto id="123"/>
+
+<!-- Elementos apenas Outros Elementos --> 
+
+<produtos>
+    <nome>TV</nome>
+    <categoria>LED</categoria>
+</produtos>
+
+<!-- Elementos apenas Texto e Atributos -->
+
+<produto id="123">televisao</produto>
+
+<!-- Elementos com Elementos , Texto e Atributos  -->
+
+<carta> caro Sr. <nome id="123">Joao</nome> o seu pedido <pedido id="1234566">123</pedido> foi expedido</carta>

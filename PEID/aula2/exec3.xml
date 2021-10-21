@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ingredients>
+    
+    <ingredient>
+        <name>Tomato</name>
+        <category>Vegetal</category>
+        <calories>18</calories>
+        <unidade_ref>100 ml</unidade_ref>
+    </ingredient>
+
+    <ingredient>
+        <name>Spinach</name>
+        <category>Vegetal</category>
+        <calories>18</calories>
+        <unidade_ref>100 ml</unidade_ref>
+    </ingredient>
+
+    <ingredient>
+        <name>Cheese</name>
+        <category>Dairy</category>
+        <calories>25</calories>
+        <unidade_ref>100 ml</unidade_ref>
+    </ingredient>
+
+    <ingredient>
+        <name>Tomato Sauce</name>
+        <category>sauce</category>
+        <calories>40</calories>
+        <unidade_ref>100 ml</unidade_ref>
+    </ingredient>
+
+
+</ingredients>

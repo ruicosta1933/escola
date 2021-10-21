@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <praia>
+        <temperatura>
+            <minima>15</minima>
+            <maxima>25</maxima>
+        </temperatura>
+        <vento unit="m/s">
+            <velocidade hora="8:00">5</velocidade>
+            <velocidade hora="12:00">7</velocidade>
+            <velocidade hora="16:00">10</velocidade>
+            <velocidade hora="20:00">6</velocidade>
+        </vento>
+
+        <sol>
+            <nascer>6:00</nascer>
+            <por>21:00</por>
+        </sol>
+        <temp_agua unit="ºC">
+            <minima>5</minima>
+            <maxima>7</maxima>
+        </temp_agua>
+        <desc>dia encoberto e sem vento</desc>
+    </praia>
+</response>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TASCA_PELOURINHO>
+
+    <prato id="VEP">
+        <nome>Veggie Pizza</nome>
+        <base>tiny</base>
+
+        <topping>
+            <ingredient>
+                <name>Spinach</name>
+                <category>Vegetal</category>
+                <calories>18</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+
+            <ingredient>
+                <name>Cheese</name>
+                <category>Dairy</category>
+                <calories>25</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+
+            <ingredient>
+                <name>Tomato Sauce</name>
+                <category>sauce</category>
+                <calories>40</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+        </topping>
+        <prices>
+            <price size="Small">$6,00</price>
+            <price size="Medium">$8,00</price>
+            <price size="Big">$12,00</price>
+        </prices>
+    </prato>
+    <prato id="MZP">
+        <nome>Mozzarela Pizza</nome>
+        <base>crispy</base>
+        <topping>
+            <ingredient>
+                <name>oregano</name>
+                <category>Vegetal</category>
+                <calories>18</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+
+            <ingredient>
+                <name>Cheese</name>
+                <category>Dairy</category>
+                <calories>25</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+
+            <ingredient>
+                <name>Onion Sauce</name>
+                <category>sauce</category>
+                <calories>40</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+        </topping>
+        <prices>
+            <price size="Small">$7,00</price>
+            <price size="Medium">$8,50</price>
+            <price size="Big">$13,00</price>
+        </prices>
+    </prato>
+
+    <prato id="MP">
+        <nome>Meat Pizza</nome>
+        <base>lean</base>
+        <topping>
+
+            <ingredient>
+                <name>Chicken</name>
+                <category>Meat</category>
+                <calories>18</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+
+            <ingredient>
+                <name>Oregano</name>
+                <category>Vegetal</category>
+                <calories>18</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+
+
+            <ingredient>
+                <name>Tomato Sauce</name>
+                <category>sauce</category>
+                <calories>40</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+        </topping>
+
+        <prices>
+            <price size="Small">$6,00</price>
+            <price size="Medium">$9,00</price>
+            <price size="Big">$12,50</price>
+        </prices>
+
+    </prato>
+
+    <prato id="PP">
+        <nome>Pelourinho Pizza</nome>
+        <base>tiny</base>
+        <topping>
+            <ingredient>
+                <name>Chicken</name>
+                <category>Meat</category>
+                <calories>18</calories>
+                <unidade_ref>100 gm</unidade_ref>
+            </ingredient>
+
+            <ingredient>
+                <name>Spinach</name>
+                <category>Vegetal</category>
+                <calories>18</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+
+            <ingredient>
+                <name>Cheese</name>
+                <category>Dairy</category>
+                <calories>25</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+
+            <ingredient>
+                <name>Tomato Sauce</name>
+                <category>sauce</category>
+                <calories>40</calories>
+                <unidade_ref>100 ml</unidade_ref>
+            </ingredient>
+        </topping>
+        <prices>
+            <price size="Small">$6,00</price>
+            <price size="Medium">$8,50</price>
+            <price size="Big">$15,00</price>
+        </prices>
+    </prato>
+</TASCA_PELOURINHO>
