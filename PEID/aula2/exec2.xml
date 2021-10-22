@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<biblioteca>
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="exec2.xsd">
     <livro id="lv_4005_nd">
         <titulo>O Principezinho</titulo>
         <autor>Antoine de Saint-Exupéry</autor>
@@ -10,7 +11,7 @@
     <revista_cientifica id="rc_208_2008 ano_publ">
         <titulo>Focused Access to XML Documents</titulo>
         <volume>
-            4862
+            
             <numero>1</numero>
         </volume>
     </revista_cientifica>

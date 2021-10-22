@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ex3.xsd" id="123">
+    <designacao>Designacao</designacao>
+    <localidade>Localidade</localidade>
+    
+    <departamentos>
+     <departamento id="123">
+         <numero>45678</numero>
+        <designacao>Designacao Departamento</designacao>
+        <telefone>123456789</telefone>
+        <email>email@gmail.com</email>
+
+        <funcionarios>
+            <funcionario id_departamento="123">
+                <id>123</id>
+                <nome>Rui</nome>
+                <morada>Rua das Ruas</morada>
+                <email>email@email.com</email>
+            </funcionario>
+        </funcionarios>
+     </departamento>
+</departamentos>
+
+</empresa>

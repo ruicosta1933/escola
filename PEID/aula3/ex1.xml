@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ex1.xsd" >
+
+    <livroA>asd</livroA> 
+
+    <livroB isbn="12345"/>
+
+    <livroC isbn="12345" >
+        <titulo>Titulo</titulo>
+        <autor>Autor</autor>
+        <ano>Ano</ano>
+    </livroC>
+
+    <livroD isbn="12345">Titulo</livroD>
+
+    <livroE isbn="12345" >
+       dasdas <titulo>Titulo</titulo>
+        <autor>Autor</autor> dkjadbkchbakdc
+      dasda  <ano>Ano</ano>
+    </livroE>
+</livro>
