@@ -40,11 +40,30 @@ func sub(valor: Float, valor2: Float) -> Int{
 print ("A subtração e \(sub(valor:3.0, valor2: 2.0))")
 
 
-//exec 6
+// EX06
 
-var frutas = ["Banana", "Laranja", "Ananas"]
+var frutas = ["Banana", "Laranja", "Ananás"]
+
+frutas.append("Pessego")
+frutas.append(contentsOf: ["Uva", "Maça"])
+frutas.insert("Melancia", at: 1)
+frutas.remove(at: 5)
+
 for fruta in frutas {
-print("Come \(fruta)!")
+    print(fruta)
 }
+
+print(frutas.count)
+
+// EX07
+
+let frase = "Beta is Latin for does not work"
+
+print(frase.split(separator: " ").count)
+let array = frase.split(separator: " ")
+
+// print(array.contains(where: <#T##(String.SubSequence) throws -> Bool#>))
+
+
 
 
