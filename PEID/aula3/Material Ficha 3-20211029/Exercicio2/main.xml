@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<prescricao xmlns="http://www.pelourinhoMD.pt/main"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.pelourinhoMD.pt/main main.xsd">
+    <data>2002-01-10</data>
+    <medico>
+        <nome></nome>
+        <especialidade>pediatria</especialidade>
+    </medico>
+    <paciente>
+        <nome></nome>
+        <genero>masculino</genero>
+    </paciente>
+    <medicamento>
+        <nome>Vicodin</nome>
+        <dosagem unidade="mg">1</dosagem>
+    </medicamento>
+</prescricao>

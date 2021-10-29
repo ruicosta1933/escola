@@ -5,47 +5,57 @@
                 <xs:element name="designacao" type="xs:string"></xs:element>
                 <xs:element name="localidade" type="xs:string"></xs:element>
 
-                <xs:element name="departamentos">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="departamento">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="numero" type="xs:positiveInteger"></xs:element>
-                                        <xs:element name="designacao" type="xs:string"></xs:element>
-                                        <xs:element name="telefone" type="xs:positiveInteger"></xs:element>
-                                        <xs:element name="email" type="xs:string"></xs:element>
-
-                                        <xs:element name="funcionarios">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="funcionario">
-                                                        <xs:complexType>
-                                                            <xs:sequence>
-                                                                <xs:element name="id" type="xs:positiveInteger"></xs:element>
-                                                                <xs:element name="nome" type="xs:string"></xs:element>
-                                                                <xs:element name="morada" type="xs:string"></xs:element>
-                                                                <xs:element name="email" type="xs:string"></xs:element>
-                                                            </xs:sequence>
-                                                            <xs:attribute name="id_departamento" type="xs:positiveInteger"></xs:attribute>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                   
-                                                </xs:sequence>
-                                                
-                                            </xs:complexType>
-                                        </xs:element>
-
-                                    </xs:sequence>
-                                    <xs:attribute name="id" type="xs:positiveInteger"></xs:attribute>
-                                </xs:complexType>
-                                
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="departamentos" type="DepartamentosTipo"></xs:element>
             </xs:sequence>
             <xs:attribute name="id" type="xs:positiveInteger"></xs:attribute>
         </xs:complexType>
     </xs:element>
+
+
+    <xs:element name="departamento" type="DepartamentoType"></xs:element>
+
+
+    <xs:element name="funcionario" type="FuncionariosTipo"></xs:element>
+
+
+    <xs:complexType name="FuncionarioTipo">
+        <xs:sequence>
+            <xs:element name="id" type="xs:positiveInteger"></xs:element>
+            <xs:element name="nome" type="xs:string"></xs:element>
+            <xs:element name="morada" type="xs:string"></xs:element>
+            <xs:element name="email" type="xs:string"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="id_departamento" type="xs:positiveInteger"></xs:attribute>
+    </xs:complexType>
+
+
+    <xs:complexType name="FuncionariosTipo">
+
+        <xs:sequence>
+
+            <xs:element name="funcionario" maxOccurs="unbounded"></xs:element>
+
+        </xs:sequence>
+
+    </xs:complexType>
+
+    <xs:complexType name="DepartamentoType">
+        <xs:sequence>
+            <xs:element name="numero" type="xs:positiveInteger"></xs:element>
+            <xs:element name="designacao" type="xs:string"></xs:element>
+            <xs:element name="telefone" type="xs:positiveInteger"></xs:element>
+            <xs:element name="email" type="xs:string"></xs:element>
+
+            <xs:element name="funcionarios" type="FuncionariosTipo"></xs:element>
+
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:positiveInteger"></xs:attribute>
+    </xs:complexType>
+
+
+    <xs:complexType name="DepartamentosTipo">
+        <xs:sequence>
+            <xs:element ref="departamento" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>

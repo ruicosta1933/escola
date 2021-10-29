@@ -12,8 +12,8 @@
         <telefone>123456789</telefone>
         <email>email@gmail.com</email>
 
-        <funcionarios>
-            <funcionario id_departamento="123">
+        <funcionarios >
+            <funcionario>
                 <id>123</id>
                 <nome>Rui</nome>
                 <morada>Rua das Ruas</morada>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.pelourinhoMD.pt/main" 
+xmlns:med="http://www.pelourinhoMD.pt/medico" xmlns:comp="http://www.pelourinhoMD.pt/medicamento" xmlns:pac="http://www.pelourinhoMD.pt/paciente" elementFormDefault="qualified"> 
+
+<xs:import schemaLocation="medicoTipo.xsd" namespace="http://www.pelourinhoMD.pt/medico"></xs:import>
+<xs:import schemaLocation="pacienteTipo.xsd" namespace="http://www.pelourinhoMD.pt/paciente"></xs:import>
+<xs:import schemaLocation="medicamentoTipo.xsd" namespace="http://www.pelourinhoMD.pt/medicamento"></xs:import>
+<!-- completar -->
+<!-- importar os xsd necessários -->
+
+    <xs:element name="prescricao">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="data" type="xs:date"/>
+
+                <xs:element name="medico" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="med:nomeTipo"></xs:element>
+                            <xs:element name="especialidade" type="med:especialidadeTipo"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="paciente" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="pac:nomeTipo"></xs:element>
+                            <xs:element name="genero" type="pac:generoTipo"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- nota: numa prescrição podem ser acrescentados vários medicamentos-->
+                <xs:element name="medicamento" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nome" type="comp:nomeTipo"></xs:element>
+                            <xs:element name="dosagem"  type="comp:dosagemTipo"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
